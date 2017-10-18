@@ -26,20 +26,24 @@ module.exports = {
         test: /\.styl$/,
         include: __dirname + '/src',
         exclude: /node_modules/,
-        use: [{
-          loader: 'style-loader',
-          options: { sourceMap: true }
-        }, {
-          loader: 'css-loader',
-          options: {
-            localIdentName: '[sha512:hash:base32]-[name]-[local]',
-            modules: true,
-            sourceMap: true 
+        use: [
+          {
+            loader: 'style-loader',
+            options: { sourceMap: true }
+          }, {
+            loader: 'css-loader',
+            options: {
+              localIdentName: '[sha512:hash:base32]-[name]-[local]',
+              modules: true,
+              sourceMap: true
+            }
+          }, {
+            loader: 'stylus-loader',
+            options: {
+              sourceMap: true
+            }
           }
-        }, {
-          loader: 'stylus-loader',
-          options: { sourceMap: true }
-        }]
+        ]
       }
     ]
   },
