@@ -52,12 +52,16 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './dist',
-    historyApiFallback: true
+    contentBase: './dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'app.html',
+      template: './src/app.pug',
+      inject: false
     })
   ]
 }
