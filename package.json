@@ -6,6 +6,9 @@
   "repository": "ssh://git@github.com/vamboo/vamboo.net.git",
   "author": "Sosuke Suzuki <aosukeke@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "server": "node_modules/.bin/webpack-dev-server"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
