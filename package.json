@@ -1,0 +1,9 @@
+{
+  "name": "vamboo.net",
+  "version": "0.0.1",
+  "description": "website of vamboo",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/vamboo/vamboo.net.git",
+  "author": "Sosuke Suzuki <aosukeke@gmail.com>",
+  "license": "MIT"
+}
