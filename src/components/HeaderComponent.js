@@ -6,7 +6,8 @@ function HeaderComponent(props) {
   return(
     <div styleName='header'>
       <h1>vamboo</h1>
-      <p>learn functional reactive programming</p>
+      <p>A visual programming language to create GUI application in functional and reactive way</p>
+      <a href='/app.html'>DEMO</a>
     </div>
   )
 }

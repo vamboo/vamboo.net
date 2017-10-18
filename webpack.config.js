@@ -7,7 +7,7 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/dist',
-    filename: 'budle.js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -26,30 +26,42 @@ module.exports = {
         test: /\.styl$/,
         include: __dirname + '/src',
         exclude: /node_modules/,
-        use: [{
-          loader: 'style-loader',
-          options: { sourceMap: true }
-        }, {
-          loader: 'css-loader',
-          options: {
-            localIdentName: '[sha512:hash:base32]-[name]-[local]',
-            modules: true,
-            sourceMap: true 
+        use: [
+          {
+            loader: 'style-loader',
+            options: { sourceMap: true }
+          }, {
+            loader: 'css-loader',
+            options: {
+              localIdentName: '[sha512:hash:base32]-[name]-[local]',
+              modules: true,
+              sourceMap: true
+            }
+          }, {
+            loader: 'stylus-loader',
+            options: {
+              sourceMap: true
+            }
           }
-        }, {
-          loader: 'stylus-loader',
-          options: { sourceMap: true }
-        }]
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   devServer: {
-    contentBase: './dist',
-    historyApiFallback: true
+    contentBase: './dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'app.html',
+      template: './src/app.pug',
+      inject: false
     })
   ]
 }
