@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Hiragino Kaku Gothic ProN';
+}
+.logo {
+  width: 1.75em;
+  height: 1.75em;
+  margin-right: 0.15em;
+  transform: rotate(10deg);
+}
+h2 {
+  font-family: 'Poiret One', cursive;
+  color: #333;
+  letter-spacing: 5px;
+  font-size: 3em;
+  padding: 0.5em 0;
+}
+h2 span {
+  font-family: 'Poiret One', cursive;
+  color: #44847d;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header .filter {
+  background: rgba(20,20,20,0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .filter h1 {
+  font-family: 'Poiret One', cursive;
+  color: #fff;
+  letter-spacing: 12px;
+  font-size: 4em;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+header .filter h1 span {
+  font-family: 'Poiret One', cursive;
+  color: #44847d;
+}
+header .filter p {
+  max-width: 500px;
+  text-align: center;
+  color: #e6e6e6;
+  letter-spacing: 4px;
+  font-size: 1.1em;
+  line-height: 2;
+}
+#demo,
+#github,
+#authors {
+  padding: 90px 0;
+  text-align: center;
+}
+#demo p,
+#github p,
+#authors p {
+  color: #444;
+  letter-spacing: 1px;
+  font-size: 1em;
+  padding: 0.25em 0;
+}
+#demo a.btn,
+#github a.btn,
+#authors a.btn {
+  text-decoration: none;
+  background: #44847d;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  margin: 2em auto;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+#demo a.btn .icon,
+#github a.btn .icon,
+#authors a.btn .icon {
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+#demo a.btn .icon i,
+#github a.btn .icon i,
+#authors a.btn .icon i {
+  color: #44847d;
+  font-size: 1.35em;
+}
+#demo a.btn span,
+#github a.btn span,
+#authors a.btn span {
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 5px;
+  flex: 1;
+}
+#demo a.btn:hover {
+  transform: scale(0.975);
+}
+#github {
+  background: #44847d;
+}
+#github h2,
+#github p {
+  color: #fff;
+}
+#github h2 span,
+#github p span {
+  color: #fff;
+}
+#github a.btn:hover {
+  transform: scale(0.975);
+  background: rgba(250,250,250,0.1);
+}
+#authors ul {
+  list-style: none;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#authors ul li {
+  padding: 0.25em;
+  display: block;
+}
+#authors ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+#authors ul li a:hover {
+  opacity: 0.8;
+}
+#authors ul li a i {
+  color: #44847d;
+  font-size: 1.5em;
+  margin-right: 0.25em;
+}
+#authors ul li a span {
+  font-size: 1.05em;
+  letter-spacing: 2px;
+}
+footer {
+  background: #d2d2d2;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.95em;
+  letter-spacing: 2px;
+  color: #333;
+}
+@media only screen and (max-width: 640px) {
+  .logo {
+    width: 1.35em;
+    height: 1.35em;
+    margin-right: 0.05em;
+    transform: rotate(10deg);
+  }
+  h2 {
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    padding: 0.25em 0;
+  }
+  header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  header .filter {
+    background: rgba(20,20,20,0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header .filter h1 {
+    letter-spacing: 8px;
+    font-size: 2.75em;
+    padding: 0.3em 0;
+  }
+  header .filter p {
+    max-width: 90vw;
+    text-align: center;
+    color: #e6e6e6;
+    letter-spacing: 3px;
+    font-size: 0.85em;
+    line-height: 2;
+  }
+  #demo,
+  #github,
+  #authors {
+    padding: 50px 0;
+    text-align: center;
+  }
+  #demo p,
+  #github p,
+  #authors p {
+    font-size: 0.85em;
+  }
+  #demo a.btn,
+  #github a.btn,
+  #authors a.btn {
+    padding: 6px;
+    width: 175px;
+    margin: 1.5em auto;
+  }
+  #demo a.btn .icon,
+  #github a.btn .icon,
+  #authors a.btn .icon {
+    height: 30px;
+    width: 30px;
+  }
+  #demo a.btn .icon i,
+  #github a.btn .icon i,
+  #authors a.btn .icon i {
+    font-size: 1.25em;
+  }
+  #demo a.btn span,
+  #github a.btn span,
+  #authors a.btn span {
+    font-size: 0.9em;
+    letter-spacing: 4px;
+  }
+  #demo a.btn:hover {
+    transform: scale(0.975);
+  }
+  #github {
+    background: #44847d;
+  }
+  #github h2,
+  #github p {
+    color: #fff;
+  }
+  #github h2 span,
+  #github p span {
+    color: #fff;
+  }
+  #github a.btn:hover {
+    transform: scale(0.975);
+    background: rgba(250,250,250,0.1);
+  }
+  #authors ul {
+    padding: 1em 0;
+  }
+  #authors ul li {
+    padding: 0.15em;
+  }
+  #authors ul li a i {
+    font-size: 1.35em;
+    margin-right: 0.15em;
+  }
+  #authors ul li a span {
+    font-size: 0.9em;
+  }
+  footer {
+    font-size: 0.85em;
+    padding: 0.25em 0;
+  }
+}
